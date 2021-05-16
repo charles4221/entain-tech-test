@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
  * @returns {Promise<Array>} An array of race summaries.
  */
 export const fetchNextRaces = () =>
-  fetch('https://api.neds.com.au/rest/v1/racing/?method=nextraces&count=30')
+  fetch('/rest/v1/racing/?method=nextraces&count=30')
     .then((res) => res.json())
     .then(({ data }) => {
       // Create a simplified array from the returned data.
