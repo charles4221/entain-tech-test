@@ -26,7 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint src/**/*.{js,jsx}",
+    "lint": "eslint src/**/*.{js,jsx} --max-warnings=5",
     "format": "prettier --write public/**/*.{js,jsx,json} src/**/*.{js,jsx,json}",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
